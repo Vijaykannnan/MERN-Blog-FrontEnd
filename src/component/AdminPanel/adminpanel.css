@@ -1,0 +1,120 @@
+.adminpanel {
+    display: flex;
+}
+
+.adminpanel .leftside h1 {
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.adminpanel .leftside {
+    background: #3d95d5;
+    height: 100vh;
+    text-align: center;
+    width: 30%;
+}
+
+.adminpanel .rightside {
+    width: 70%;
+    /* margin-left: -6%; */
+    /* background: #f4bfbf; */
+}
+
+.adminpanel .rightside input {}
+
+.adminpanel .leftside a {
+    display: block;
+    text-align: left;
+    width: 37%;
+    margin: 3rem auto;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* for create post */
+.createpost-admin {
+    margin-left: -16%;
+}
+
+/* for viewusers & viewpost */
+
+.viewusers,
+.viewposts {
+    /* background: #615858; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.viewpost-table {
+    margin: 10px;
+}
+
+.viewpost-table tr,
+.viewpost-table th,
+.viewpost-table td {
+    padding: 2px;
+    font-size: .8rem;
+}
+
+.viewpost-table img {
+    width: 66%;
+    height: 7vh;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+}
+
+.viewpost-table tr td:nth-child(4)>img {
+
+    width: 100%;
+    height: 17vh;
+    object-fit: cover;
+}
+
+/* for Edit Post */
+.editPost {
+    /* background: #000; */
+    height: 170vh;
+}
+
+.editPost img {
+
+    width: 20%;
+    height: 15vh;
+    object-fit: cover;
+    display: flex;
+    margin: 5% auto;
+}
+
+.editPost div:nth-child(4)>img {
+    width: 70%;
+    height: 20vh;
+    object-fit: cover;
+    display: flex;
+    margin: 5% auto;
+}
+
+/* //view comment table */
+
+.viewcomment-table {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.viewcomment-table img {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}

@@ -1,0 +1,68 @@
+.sidebar {
+    width: 30%;
+    background: #e5baba;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+.sidebar form {
+    /* background: #000; */
+    margin-top: 24%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar form span {
+    position: relative;
+    left: -22px;
+    cursor: pointer;
+}
+
+.sidebar form input {
+    border: none;
+    outline: none;
+    padding: 1%;
+    width: 50%;
+    height: 4vh;
+    border-radius: 4px;
+    text-indent: 1.5rem;
+}
+
+.sidebar .recent-post {
+    /* background: #e56e6e; */
+    width: 65%;
+    margin: auto;
+    border: 1px solid #ccc;
+    margin-top: 13%;
+}
+
+.sidebar .recent-post-details {
+    margin-top: 2rem;
+    display: flex;
+    padding: 0 10px
+}
+
+.sidebar .recent-post-details h1 {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: .5rem;
+}
+
+.sidebar .recent-post-details img {
+    width: 20%;
+    height: 10vh;
+
+}
+
+@media all and (max-width:550px) {
+
+    .sidebar {
+        display: none;
+    }
+}

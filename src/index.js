@@ -2,16 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Provider } from "react-redux"
+import { configureStore } from '@reduxjs/toolkit'
+import { getDefaultMiddleware } from '@reduxjs/toolkit';
+import { reducer } from "../src/component/reducer/reducer"
 
+
+
+const storeData = configureStore({ reducer, middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false }), })
+// const storeData =configureStore({ reducer})
+// mela ulla ithu mattum than na potathu methi fullam err varthunu net refer panni potathu
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={ storeData }>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
