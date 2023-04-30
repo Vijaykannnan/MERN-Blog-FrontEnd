@@ -54,11 +54,11 @@ function Viewcomments() {
                                 return <td>{ postVal.title }</td>
                             }
                         }) }
-                        { posts.data?.map((postVal) => {
+                        {/* { posts.data?.map((postVal) => {
                             if (commentVal.postCommentId === postVal._id) {
                                 return <td><img src={ require("../../../../server/uploads/" + postVal.postImg) } /></td>
                             }
-                        }) }
+                        }) } */}
                         {/* <td>{ val.postCommentId }</td> */ }
                         {/* <td>PostImg</td> */ }
                         <td>{ commentVal.message }</td>

@@ -143,7 +143,7 @@ function EditPost() {
                 </div>
                 <div>
                     <label htmlFor="photo">User Photo</label>
-                    <img src={ userPhoto && require(`../../../../server/uploads/${userPhoto}`) } alt="imges" />
+                    {/* <img src={ userPhoto && require(`../../../../server/uploads/${userPhoto}`) } alt="imges" /> */ }
                     <input type="file" id="photo" onChange={ (e) => setPostData({ ...postData, userPhoto: e.target.files }) } />
                     {/* (e) => setPostData({ ...postData, userPhoto: e.target.files }) */ }
                 </div>
@@ -153,7 +153,7 @@ function EditPost() {
                 </div>
                 <div>
                     <label htmlFor="postImg">Post Img</label>
-                    <img src={ postImg && require(`../../../../server/uploads/${postImg}`) } alt="imges" />
+                    {/* <img src={ postImg && require(`../../../../server/uploads/${postImg}`) } alt="imges" /> */ }
                     <input type="file" id="postImg" onChange={ (e) => setPostData({ ...postData, postImg: e.target.files }) } />
                 </div>
                 <div>
