@@ -22,7 +22,8 @@ function Adminpanel() {
         }).then((data) => {
             console.log("session destroyed");
             // console.log("content", data);
-            window.location.reload();
+//             window.location.reload();
+            navigate("/");
         }).catch((err) => {
             console.log(err);
         })
