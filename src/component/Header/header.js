@@ -31,7 +31,7 @@ function Header({ headerRender }) {
         }).then((data) => {
             console.log("session destroyed");
             // console.log("content", data);
-            window.location="/";
+           window.location.reload()
 //             navigate("/");
         }).catch((err) => {
             console.log(err);
