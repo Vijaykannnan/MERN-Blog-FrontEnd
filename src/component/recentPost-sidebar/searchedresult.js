@@ -27,7 +27,7 @@ export default function Content() {
                         <div className='blog-post_profile'>
 
                             <div className="blog-post_profileDetails">
-                                import baseUrl from "../helper"
+                               
                                 <img src={ `${baseUrl}/uploads/` + item.userPhoto } alt="userphoto" />
                                 <div>
                                     <h2>Gayane Vardanyan</h2>
