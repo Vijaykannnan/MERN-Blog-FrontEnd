@@ -54,7 +54,7 @@ export default function RecentPost({ datas, ownProp }) {
 
                 { datas ? datas.map((item, index) => {
                     return <div className="recent-post-details" key={ index }>
-                        <img src={ `${baseUrl}/uploads/` + item.userPhoto } />
+                       <img src={ `${baseUrl}/uploads/` + item.postImg } />
                         <Link to={ `/` && "/singlepostcontent?post_id=" + item._id }><p > { item.postContent.slice(0, 50) }</p ></Link>
                     </div>
                 }) : <h1>No Recent files</h1> }
