@@ -34,9 +34,9 @@ function Viewposts() {
                 { posts.data?.map((val, id) => {
                     return <tr key={ id }>
                         <td>{ val.title }</td>
-                        {/* <td><img src={ require(`../../../../server/uploads/${val.userPhoto}`) } /></td> */ }
+                         <td><img src={ `${baseUrl}/uploads/${val.userPhoto}` } /></td>
                         <td>{ val.userName }</td>
-                        {/* <td><img src={ require(`../../../../server/uploads/${val.postImg}`) } /></td> */ }
+                        <td><img src={ `${baseUrl}/uploads/${val.postImg}` } /></td>
                         <td>{ val.postContent }</td>
                         <td>{ formatISO9075(new Date(val.createdAt)) }</td>
                         <td><Link to={ `/editpost?edit_id=${val._id}` }>Edit</Link></td>
